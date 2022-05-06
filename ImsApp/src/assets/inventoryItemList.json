@@ -1,0 +1,82 @@
+[
+    {
+        "id": "101",
+        "name": "Calculator",
+        "description": "Work-In-Process",
+        "inventoryType": "Anticipation inventory.",
+        "price": 20,
+        "techniques": "pull strategy"
+    },
+    {
+        "id": "102",
+        "name": "IMS App",
+        "description": "Work-In-Process",
+        "inventoryType": "Anticipation inventory.",
+        "price": 20,
+        "techniques": "push strategy"
+    },
+    {
+        "id": "103",
+        "name": "Management System",
+        "description": "Work-In-Process",
+        "inventoryType": "WIP",
+        "price": 30,
+        "techniques": "just in time (JIT) strategy"
+    },
+    {
+        "id": "104",
+        "name": "Banking System",
+        "description": "Work-In-Process",
+        "inventoryType": "Cycle inventory",
+        "price": 40,
+        "techniques": "just in time (JIT) strategy"
+    },
+    {
+        "id": "105",
+        "name": "Online Tracker System",
+        "description": "Work-In-Process",
+        "inventoryType": "Document",
+        "price": 10,
+        "techniques": "just in time (JIT) strategy"
+    },
+    {
+        "id": "106",
+        "name": "TATA",
+        "description": "Work-In-Process",
+        "inventoryType": "Goods inventory",
+        "price": 20,
+        "techniques": "just in time (JIT) strategy"
+    },
+    {
+        "id": "107",
+        "name": "Digital World",
+        "description": "Work-In-Process",
+        "inventoryType": "Report inventory",
+        "price": 50,
+        "techniques": "pull strategy"
+    },
+    {
+        "id": "108",
+        "name": "Social Program",
+        "description": "Work-In-Process",
+        "inventoryType": "Collect fund",
+        "price": 50,
+        "techniques": "push strategy"
+    },
+    {
+        "id": "109",
+        "name": "Raw materials inventory",
+        "description": "Work-In-Process",
+        "inventoryType": "Raw materials",
+        "price": 20,
+        "techniques": "pull strategy"
+    },
+    {
+        "id": "110",
+        "name": "Stock Management System",
+        "description": "Work-In-Process",
+        "inventoryType": "Report inventory",
+        "price": 20,
+        "techniques": "pull strategy"
+    }
+]
