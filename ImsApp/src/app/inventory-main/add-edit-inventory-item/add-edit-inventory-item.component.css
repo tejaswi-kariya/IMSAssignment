@@ -1,0 +1,22 @@
+
+.mat-dialog-content {
+    margin: 0!important;
+    padding: 10px !important;
+    overflow-y: auto !important;
+        max-width: 500px;
+}
+
+.mat-dialog-acions {
+  padding-bottom: 15px !important;
+}
+.blinking{
+  animation:blinkingText 0.3s;
+}
+
+@keyframes blinkingText{
+  0%{     color: rgb(240, 16, 16);    }
+  49%{    color: transparent; }
+  50%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: rgb(240, 16, 16);     }
+}

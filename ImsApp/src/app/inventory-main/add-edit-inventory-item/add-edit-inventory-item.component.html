@@ -1,1 +1,63 @@
-<p>add-edit-inventory-item works!</p>
+<mat-toolbar class="mb-2" mat-dialog-title color="primary">
+    <mat-toolbar-row>
+      <h2>{{isEdit ? 'Edit Inventory' : 'Add Inventory'}}</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <form inventoryForm="ngForm">
+    <mat-dialog-content class="mat-typography" fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <!-- Name -->
+      <div fxLayout="column" fxFlex="100">
+        <mat-form-field>
+          <input matInput type="text" placeholder="Name" #nameModel="ngModel" required name="name"
+            [(ngModel)]="addInventoryItemReq.name">
+         <mat-error *ngIf="nameModel.hasError('required')">
+                     This field is Required
+         </mat-error>
+        </mat-form-field>
+      </div>
+      <!-- Description -->
+      <div fxLayout="column" fxFlex="100">
+        <mat-form-field>
+          <input matInput type="text" placeholder="Description" #decModel="ngModel" name="description"
+            [(ngModel)]="addInventoryItemReq.description">
+        </mat-form-field>
+      </div>
+      <!-- Inventory Type -->
+      <div fxLayout="column" fxFlex="100">
+        <mat-form-field>
+          <textarea matInput type="text" placeholder="Inventory Type" #typenModel="ngModel" required name="inventoryType"
+            [(ngModel)]="addInventoryItemReq.inventoryType"></textarea>
+              <mat-error *ngIf="typenModel.hasError('required')">
+                This field is Required
+              </mat-error>
+        </mat-form-field>
+      </div>
+      <!-- Price -->
+      <div fxLayout="column" fxFlex="100">
+        <mat-form-field>
+      <input matInput type="number" placeholder="Price" #priceModel="ngModel" required name="price"
+        [(ngModel)]="addInventoryItemReq.price">
+        <mat-error *ngIf="priceModel.hasError('required')">
+          This field is Required
+        </mat-error>
+        </mat-form-field>
+      </div>
+       <!-- Technique-->
+       <div fxLayout="column" fxFlex="100">
+        <mat-form-field>
+          <input matInput type="text" placeholder="Technique" #techniqueModel="ngModel" name="technique"
+            [(ngModel)]="addInventoryItemReq.technique">
+        </mat-form-field>
+      </div>
+      <div fxLayout="row wrap" *ngIf="blink">
+        <p style="color:red" [ngClass]="{'blinking':blink}" >
+          <small>Fields marked with &#42; are mandatory and should be valid.</small></p>
+      </div>
+    </mat-dialog-content>
+    <mat-dialog-actions fxLayoutAlign="end center">
+        <button mat-raised-button mat-dialog-close color="accent">Cancel</button>
+        <button mat-raised-button (click)="addInventory()" class="m-2" color="primary" type="button"
+          [disabled]="inventoryForm?.invalid">{{isEdit ? 'Update' : 'Add'}}</button>
+      </mat-dialog-actions>
+  </form>
+  

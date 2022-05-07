@@ -1,10 +1,56 @@
-
-      <h2 >Manage Inventory List</h2>
-    
-
-      <div fxLayout="row" fxFlex fxLayoutAlign="end center">
-          <button mat-raised-button color="primary" type="button" (click)="onAddItem()"
-          matTooltip="Add Inventory Item">+ Inventory Item</button>
+<mat-card>
+  <mat-card-title>
+    <div fxLayout="row">
+      <div fxLayout="row" fxLayoutAlign="start center" fxFlex="50" fxLayoutGap="5px">
+        Inventory List
       </div>
-      
-      
+      <div fxLayout="row" fxFlex fxLayoutAlign="end center">
+        <button mat-raised-button color="primary" (click)="onAddItem()" matTooltip="Add Inventory Item">
+          <mat-icon class="material-icons mat-18">add</mat-icon>
+          Inventory Item
+        </button>
+
+      </div>
+    </div>
+  </mat-card-title>
+
+<mat-card-content>
+  <kendo-grid kendoGrid [data]="gridData" [pageSize]="state.take" [skip]="state.skip" [pageable]="true"
+    [sortable]="{mode: 'single'}" [sort]="state.sort" (sortChange)="sortChange($event)" [resizable]="true"
+    [scrollable]="true" [filter]="state.filter" [filterable]="true" (dataStateChange)="filterChange($event)"
+    (pageChange)="onPageChange($event)">
+
+    <!-- Name -->
+    <kendo-grid-column field="name" title="Name" width="150">
+      <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+        {{dataItem.name}}
+      </ng-template>
+    </kendo-grid-column>
+
+    <!--Description -->
+    <kendo-grid-column field="description" title="Description" width="150">
+    </kendo-grid-column>
+
+    <!--Inventory Type-->
+    <kendo-grid-column title="Inventory Type" field="inventoryType" width="140">
+    </kendo-grid-column>
+    <!--Price-->
+    <kendo-grid-column title="Price" field="price" width="140">
+    </kendo-grid-column>
+    <!--Techniques-->
+    <kendo-grid-column field="techniques" title="Techniques" width="120">
+    </kendo-grid-column>
+    <!-- Action -->
+
+    <kendo-grid-column field="actions" title="Action" width="120" [filterable]="false" [sortable]="false">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <button matTooltip="Edit" mat-icon-button color="accent" (click)="editItem(dataItem)">
+          <mat-icon class="mat-18">edit</mat-icon>
+        </button>
+        <button matTooltip="Delete" mat-icon-button color="accent" (click)="removeItem(dataItem)">
+          <mat-icon class="mat-18">delete</mat-icon>
+        </button>
+      </ng-template>
+    </kendo-grid-column>
+  </kendo-grid>
+</mat-card-content>

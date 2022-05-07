@@ -1,0 +1,26 @@
+<mat-toolbar mat-dialog-title>
+    <mat-toolbar-row>
+      <h2 class="m-auto">Remove Item from Cart</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-dialog-content>
+    <div fxLayout="row wrap" fxLayoutAlign="center center" class="text-center">
+      <div fxLayout="column" fxFlex="100">
+        <h2 class="mb-0">Do you want to remove item from the cart?</h2>
+      </div>
+  
+      <div fxLayout="column" fxFlex="100">
+        <p class="mat-body-2">Click <span class="text-primary">Yes</span> to continue</p>
+      </div>
+    </div>
+  </mat-dialog-content>
+  
+  <!-- Actions -->
+  <mat-dialog-actions fxLayoutAlign="center center" fxLayoutGap="10px">
+    <div fxLayout="column">
+      <button mat-raised-button color="accent" class="m-0" mat-dialog-close>Cancel</button>
+    </div>
+    <div fxLayout="column">
+      <button mat-raised-button color="primary" class="m-0" [mat-dialog-close]="true">Yes, Continue</button>
+    </div>
+  </mat-dialog-actions>

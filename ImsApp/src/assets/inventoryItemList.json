@@ -5,7 +5,7 @@
         "description": "Work-In-Process",
         "inventoryType": "Anticipation inventory.",
         "price": 20,
-        "techniques": "pull strategy"
+        "technique": "pull strategy"
     },
     {
         "id": "102",
@@ -13,7 +13,7 @@
         "description": "Work-In-Process",
         "inventoryType": "Anticipation inventory.",
         "price": 20,
-        "techniques": "push strategy"
+        "technique": "push strategy"
     },
     {
         "id": "103",
@@ -21,7 +21,7 @@
         "description": "Work-In-Process",
         "inventoryType": "WIP",
         "price": 30,
-        "techniques": "just in time (JIT) strategy"
+        "technique": "just in time (JIT) strategy"
     },
     {
         "id": "104",
@@ -29,7 +29,7 @@
         "description": "Work-In-Process",
         "inventoryType": "Cycle inventory",
         "price": 40,
-        "techniques": "just in time (JIT) strategy"
+        "technique": "just in time (JIT) strategy"
     },
     {
         "id": "105",
@@ -37,7 +37,7 @@
         "description": "Work-In-Process",
         "inventoryType": "Document",
         "price": 10,
-        "techniques": "just in time (JIT) strategy"
+        "technique": "just in time (JIT) strategy"
     },
     {
         "id": "106",
@@ -45,7 +45,7 @@
         "description": "Work-In-Process",
         "inventoryType": "Goods inventory",
         "price": 20,
-        "techniques": "just in time (JIT) strategy"
+        "technique": "just in time (JIT) strategy"
     },
     {
         "id": "107",
@@ -53,7 +53,7 @@
         "description": "Work-In-Process",
         "inventoryType": "Report inventory",
         "price": 50,
-        "techniques": "pull strategy"
+        "technique": "pull strategy"
     },
     {
         "id": "108",
@@ -61,7 +61,7 @@
         "description": "Work-In-Process",
         "inventoryType": "Collect fund",
         "price": 50,
-        "techniques": "push strategy"
+        "technique": "push strategy"
     },
     {
         "id": "109",
@@ -69,7 +69,7 @@
         "description": "Work-In-Process",
         "inventoryType": "Raw materials",
         "price": 20,
-        "techniques": "pull strategy"
+        "technique": "pull strategy"
     },
     {
         "id": "110",
@@ -77,6 +77,6 @@
         "description": "Work-In-Process",
         "inventoryType": "Report inventory",
         "price": 20,
-        "techniques": "pull strategy"
+        "technique": "pull strategy"
     }
 ]
