@@ -1,0 +1,22 @@
+
+.mat-dialog-content {
+    margin: 0!important;
+    padding: 10px !important;
+    overflow-y: auto !important;
+        max-width: 500px;
+}
+
+.mat-dialog-acions {
+  padding-bottom: 15px !important;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 44px;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 44px;
+}
+
+.mat-toolbar h4 {
+  font-size: medium !important;
+}

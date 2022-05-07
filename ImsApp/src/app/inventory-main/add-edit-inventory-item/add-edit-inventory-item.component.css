@@ -20,3 +20,14 @@
   99%{    color:transparent;  }
   100%{   color: rgb(240, 16, 16);     }
 }
+
+.mat-toolbar-multiple-rows {
+  min-height: 44px;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 44px;
+}
+
+.mat-toolbar h4 {
+  font-size: medium !important;
+}
