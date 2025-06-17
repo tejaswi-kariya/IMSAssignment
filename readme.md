@@ -8,7 +8,7 @@ Used
 => Kendo Grid
 => Angular Material
 
-![badge-language] ![bagde-html] ![badge-mit]
+![badge-language] ![badge-html] ![badge-mit]
 
 [badge-language]: https://img.shields.io/badge/Language-Angular-red
 [badge-html]: https://img.shields.io/badge/Language-HTML-greeen
